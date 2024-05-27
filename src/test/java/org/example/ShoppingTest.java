@@ -19,6 +19,7 @@ public class ShoppingTest {
     @BeforeMethod
     public void setup() {
         open("https://react-shopping-cart-67954.firebaseapp.com/");
+        getWebDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         getWebDriver().manage().window().maximize();
     }
 
